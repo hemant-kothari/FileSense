@@ -1,8 +1,8 @@
-# FolderScribe 📁✏
+# FileSense📁✏
 
 A desktop file-browser for Windows that adds **AI-powered + manual descriptions** to every file and folder — like sticky notes, but smart.
 
-Descriptions are stored in portable `.folderscribe.json` sidecar files that travel with your project when you share it.
+Descriptions are stored in portable `.filesense.json` sidecar files that travel with your project when you share it.
 
 ---
 
@@ -16,7 +16,7 @@ Descriptions are stored in portable `.folderscribe.json` sidecar files that trav
 | 🔄 Auto-refresh | Checks every 30 min (configurable); skips files idle > 4 days |
 | 🔐 Sensitive data | Detects API keys, passwords, tokens — never puts values in desc |
 | 📤 Share export | One click strips sensitive flags for safe sharing |
-| 📁 Portable | Sidecar `.folderscribe.json` travels with the folder |
+| 📁 Portable | Sidecar `.filesense.json` travels with the folder |
 
 ---
 
@@ -109,7 +109,7 @@ Patterns detected (values are **never** included in descriptions):
 
 ## Sidecar format
 
-`.folderscribe.json` lives inside every annotated folder:
+`.filesense.json` lives inside every annotated folder:
 
 ```json
 {
@@ -140,13 +140,13 @@ Patterns detected (values are **never** included in descriptions):
 ## Project structure
 
 ```
-folderscribe/
+filesense/
 ├── main.py              Entry point
 ├── config.py            App configuration + persistence
 ├── requirements.txt
 ├── core/
 │   ├── ai_engine.py     Groq API calls, file extraction, sensitive detection
-│   ├── sidecar.py       Read/write .folderscribe.json files
+│   ├── sidecar.py       Read/write .filesense.json files
 │   └── watcher.py       Background scheduler + update workers
 └── ui/
     ├── main_window.py   Main window, tree, file list
@@ -159,7 +159,7 @@ folderscribe/
 
 ## Settings
 
-All settings are saved to `~/.folderscribe/config.json`.
+All settings are saved to `~/.filsesense/config.json`.
 
 | Setting | Default | Description |
 |---|---|---|
