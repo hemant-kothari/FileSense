@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "folder": {
+    "short_desc": "Description unavailable",
+    "long_desc": "Could not generate a description.",
+    "manual_lock": false,
+    "last_updated": "2026-03-20T15:45:22.663514",
+    "sensitive_detected": false
+  },
+  "files": {
+    "config.py": {
+      "short_desc": "Description unavailable",
+      "long_desc": "Could not generate a description.",
+      "manual_lock": false,
+      "last_updated": "2026-03-20T15:45:07.935327",
+      "last_file_modified": "2026-03-20T15:31:49.570690",
+      "sensitive_detected": false,
+      "sensitive_types": []
+    },
+    "README.md": {
+      "short_desc": "A desktop file-browser for Windows with AI-powered descriptions.",
+      "long_desc": "FolderScribe is a desktop file-browser for Windows that adds AI-powered and manual descriptions to every file and folder, like sticky notes but smart.",
+      "manual_lock": false,
+      "last_updated": "2026-03-20T15:44:18.918844",
+      "last_file_modified": "2026-03-20T15:31:49.565078",
+      "sensitive_detected": true,
+      "sensitive_types": [
+        "bearer token"
+      ]
+    },
+    "main.py": {
+      "short_desc": "Entry point for FolderScribe application, runs with python main.py",
+      "long_desc": "Main file for FolderScribe application, initializes the GUI and sets up the application",
+      "manual_lock": false,
+      "last_updated": "2026-03-20T15:44:38.833368",
+      "last_file_modified": "2026-03-20T15:41:36.263386",
+      "sensitive_detected": false,
+      "sensitive_types": []
+    },
+    "requirements.txt": {
+      "short_desc": "List of Python package dependencies",
+      "long_desc": "This file contains a list of Python package dependencies required for the project, including PySide6, requests, Pillow, pypdf, python-docx, and openpyxl.",
+      "manual_lock": false,
+      "last_updated": "2026-03-20T15:45:00.703608",
+      "last_file_modified": "2026-03-20T15:31:49.554955",
+      "sensitive_detected": false,
+      "sensitive_types": []
+    }
+  }
+}
